@@ -1,51 +1,124 @@
+
 <section class="ofertas">
-  <h2>🛍️ Nuestras Ofertas</h2>
+  <h2>🛍️ Nuestras Ofertas Exclusivas</h2>
 
   <div class="producto">
+    <img src="imagenes/proveedores-privados.png" alt="Proveedores Privados" class="logo-producto">
     <h3>Proveedores Privados</h3>
-    <p>Accede a proveedores exclusivos para obtener productos al por mayor y revenderlos con alta ganancia.</p>
+    <p>Accede a proveedores exclusivos para comprar al por mayor y revender con margen.</p>
     <p><strong>Precio: Desde 99 €</strong></p>
     <a href="https://www.paypal.com/paypalme/urretatxiki/99" target="_blank" class="boton-comprar">Comprar ahora</a>
   </div>
 
   <div class="producto">
-    <h3>Productos para Reventa</h3>
-    <p>Artículos de alta demanda como AirPods, Dyson, Macs y más para que revendas fácilmente y obtengas beneficios.</p>
-    <p><strong>Precio: Desde 49 €</strong></p>
-    <a href="https://www.paypal.com/paypalme/urretatxiki/49" target="_blank" class="boton-comprar">Comprar ahora</a>
+    <img src="imagenes/airpods.png" alt="AirPods" class="logo-producto">
+    <h3>AirPods para Reventa</h3>
+    <p>Los auriculares inalámbricos más demandados para revender y obtener ganancias.</p>
+    <p><strong>Precio: Desde 79 €</strong></p>
+    <a href="https://www.paypal.com/paypalme/urretatxiki/79" target="_blank" class="boton-comprar">Comprar ahora</a>
+  </div>
+
+  <div class="producto">
+    <img src="imagenes/dyson.png" alt="Dyson" class="logo-producto">
+    <h3>Productos Dyson</h3>
+    <p>Aspiradoras y más electrodomésticos para reventa con alta demanda.</p>
+    <p><strong>Precio: Desde 129 €</strong></p>
+    <a href="https://www.paypal.com/paypalme/urretatxiki/129" target="_blank" class="boton-comprar">Comprar ahora</a>
+  </div>
+
+  <div class="producto">
+    <img src="imagenes/mac.png" alt="Macs" class="logo-producto">
+    <h3>Macs para Reventa</h3>
+    <p>Ordenadores Apple para revendedores que quieren calidad y prestigio.</p>
+    <p><strong>Precio: Desde 499 €</strong></p>
+    <a href="https://www.paypal.com/paypalme/urretatxiki/499" target="_blank" class="boton-comprar">Comprar ahora</a>
   </div>
 </section>
 
 <style>
 .ofertas {
-  padding: 40px;
+  padding: 40px 20px;
   background-color: #f7f9fc;
   border-radius: 20px;
   text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+.ofertas h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #222;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 
 .producto {
   background: white;
   border-radius: 16px;
-  padding: 20px;
+  padding: 30px 20px;
   margin: 20px auto;
-  max-width: 500px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+}
+
+.producto:last-child {
+  margin-right: 0;
+}
+
+.producto:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.logo-producto {
+  width: 120px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.producto:hover .logo-producto {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.producto h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #0070ba;
+}
+
+.producto p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 15px;
+  min-height: 60px;
+}
+
+.producto strong {
+  color: #222;
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
 .boton-comprar {
   display: inline-block;
-  margin-top: 10px;
-  padding: 12px 20px;
+  padding: 14px 28px;
   background-color: #0070ba;
   color: white;
-  border-radius: 8px;
+  border-radius: 10px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s;
+  font-size: 1.1rem;
+  box-shadow: 0 6px 15px rgba(0, 112, 186, 0.5);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .boton-comprar:hover {
   background-color: #005c9d;
+  box-shadow: 0 8px 20px rgba(0, 92, 157, 0.8);
 }
 </style>

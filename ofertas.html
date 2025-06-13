@@ -3,187 +3,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ofertas | TechYouthTech</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <title>Ofertas - TechYouthTech</title>
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #3e1f47, #6a0dad);
-      color: #f5f5f7;
-      margin: 0 20px 50px;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f7;
+      margin: 0; padding: 0;
+      color: #333;
     }
-    header {
-      padding: 40px 0 30px;
+    header, footer {
+      background-color: #0070ba;
+      color: white;
       text-align: center;
-      user-select: none;
-    }
-    header h1 {
-      font-size: 3rem;
-      font-weight: 900;
-      color: #d88eff;
-      letter-spacing: 2px;
-      margin-bottom: 10px;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      flex-wrap: wrap;
-      margin-bottom: 30px;
-    }
-    nav a {
-      color: #e9d7ffcc;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1rem;
-      padding: 10px 20px;
-      border-radius: 30px;
-      transition: background 0.4s, color 0.4s;
-    }
-    nav a:hover, nav a:focus {
-      background: #d88eff;
-      color: #31004d;
-      outline: none;
-      box-shadow: 0 0 12px #d88effcc;
-      transform: scale(1.05);
+      padding: 20px 10px;
     }
     main {
-      max-width: 1000px;
-      margin: auto;
-      background: rgba(60, 20, 75, 0.9);
-      padding: 40px 50px 60px;
-      border-radius: 20px;
-      box-shadow: 0 18px 40px rgba(216, 142, 255, 0.5);
-      backdrop-filter: blur(10px);
-      color: #f0e9ff;
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      padding: 25px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
-    main h2 {
-      font-size: 2.8rem;
-      margin-bottom: 40px;
-      text-align: center;
-      text-shadow: 0 0 10px #d88effcc;
+    h1, h2 {
+      color: #005a9c;
     }
-    section.oferta {
-      background: #541d7f;
-      padding: 30px;
-      border-radius: 18px;
-      margin-bottom: 35px;
-      box-shadow: 0 8px 30px #d88effaa;
-      transition: transform 0.3s ease;
-      cursor: pointer;
+    .offer {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 25px;
+      background-color: #e9f1fc;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+      transition: background-color 0.3s ease;
     }
-    section.oferta:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 40px #d88effdd;
+    .offer:hover {
+      background-color: #d0e4fc;
     }
-    section.oferta h3 {
-      font-size: 1.9rem;
-      margin-bottom: 18px;
-      color: #d2afff;
+    .offer h3 {
+      margin-top: 0;
+      color: #004080;
     }
-    section.oferta p {
-      font-size: 1.2rem;
-      line-height: 1.6;
-      margin-bottom: 12px;
-      color: #d8c9ff;
+    .offer p {
+      font-size: 1.1em;
+      line-height: 1.4;
     }
-    section.oferta .precio {
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: #ffde59;
-      margin-top: 8px;
-      margin-bottom: 10px;
+    form {
+      margin-top: 15px;
     }
-    section.oferta button {
-      background: #bb83ff;
+    input[type="submit"] {
+      background-color: #0070ba;
+      color: white;
       border: none;
-      padding: 12px 28px;
-      font-size: 1.1rem;
-      border-radius: 30px;
-      color: #3c005c;
-      font-weight: 700;
+      padding: 12px 25px;
+      font-weight: bold;
+      font-size: 1em;
+      border-radius: 5px;
       cursor: pointer;
-      box-shadow: 0 6px 20px #bb83ffcc;
-      transition: background 0.3s ease, transform 0.3s ease;
-      user-select: none;
+      transition: background-color 0.25s ease;
     }
-    section.oferta button:hover {
-      background: #d88eff;
-      transform: scale(1.1);
-      box-shadow: 0 10px 30px #d88effdd;
+    input[type="submit"]:hover {
+      background-color: #005a87;
     }
-    footer {
-      text-align: center;
-      margin-top: 80px;
-      color: #bbb;
-      font-size: 0.9rem;
-      user-select: none;
-    }
-    @media (max-width: 700px) {
-      main {
-        padding: 30px 20px 40px;
-      }
-      section.oferta h3 {
-        font-size: 1.5rem;
-      }
-      section.oferta p, section.oferta .precio {
-        font-size: 1rem;
-      }
+    footer p {
+      font-size: 0.9em;
+      margin: 10px 0 0;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>TechYouthTech</h1>
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="guias.html">Guías</a>
-      <a href="ofertas.html">Ofertas</a>
-      <a href="blog.html">Blog</a>
-      <a href="videos.html">Videos</a>
-      <a href="contacto.html">Contacto</a>
-      <a href="privacidad.html">Privacidad</a>
-    </nav>
+    <h1>Ofertas Exclusivas en TechYouthTech</h1>
+    <p>Las mejores promociones para que aproveches la tecnología sin gastar de más</p>
   </header>
-
   <main>
-    <h2>Ofertas irresistibles para amantes de la tecnología</h2>
-
-    <section class="oferta">
-      <h3>Smartphone TurboMax Z10 – Descuento exclusivo 30%</h3>
-      <p>El smartphone que está revolucionando el mercado ahora con un precio especial. Pantalla AMOLED 120Hz, cámara 108MP, batería de 5000mAh y carga ultrarrápida.</p>
-      <div class="precio">Precio: 499€ <del>714€</del></div>
-      <button onclick="alert('¡Gracias por interesarte! Próximamente link para comprar.')">Comprar Ahora</button>
+    <section class="offer">
+      <h3>Guía Completa de Configuración de PC Gamer</h3>
+      <p>¿Quieres montar tu propio PC gamer sin complicaciones? Esta guía paso a paso te ayuda a elegir los componentes adecuados y a ensamblar tu equipo ideal. Ideal para principiantes y amantes de los videojuegos.</p>
+      <p><strong>Precio especial: 7,50 €</strong></p>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_xclick" />
+        <input type="hidden" name="business" value="ivanurreta@gmail.com" />
+        <input type="hidden" name="item_name" value="Guía Completa de Configuración de PC Gamer" />
+        <input type="hidden" name="amount" value="7.50" />
+        <input type="hidden" name="currency_code" value="EUR" />
+        <input type="submit" value="Comprar ahora" />
+      </form>
     </section>
 
-    <section class="oferta">
-      <h3>Auriculares inalámbricos Zeno X100 - Oferta limitada</h3>
-      <p>Disfruta de tu música con cancelación activa de ruido, calidad de sonido premium y batería de larga duración. Ideal para teletrabajo y gaming.</p>
-      <div class="precio">Precio: 79€ <del>120€</del></div>
-      <button onclick="alert('¡Gracias por interesarte! Próximamente link para comprar.')">Comprar Ahora</button>
+    <section class="offer">
+      <h3>Curso Básico de Edición de Video</h3>
+      <p>Aprende a editar videos con herramientas gratuitas y profesionales. Incluye tutoriales para principiantes, técnicas básicas y trucos para mejorar la calidad de tus videos.</p>
+      <p><strong>Precio especial: 7,50 €</strong></p>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_xclick" />
+        <input type="hidden" name="business" value="ivanurreta@gmail.com" />
+        <input type="hidden" name="item_name" value="Curso Básico de Edición de Video" />
+        <input type="hidden" name="amount" value="7.50" />
+        <input type="hidden" name="currency_code" value="EUR" />
+        <input type="submit" value="Comprar ahora" />
+      </form>
     </section>
 
-    <section class="oferta">
-      <h3>Smartwatch YouthTracker - Oferta especial 20% off</h3>
-      <p>Monitorea tu salud, controla tu actividad y recibe notificaciones con estilo y comodidad. Resistente al agua y compatible con Android/iOS.</p>
-      <div class="precio">Precio: 95€ <del>120€</del></div>
-      <button onclick="alert('¡Gracias por interesarte! Próximamente link para comprar.')">Comprar Ahora</button>
+    <section class="offer">
+      <h3>Plantillas de Diseño para Redes Sociales</h3>
+      <p>Obtén un pack con más de 50 plantillas editables para Instagram, Facebook y YouTube. Ahorra tiempo creando contenido profesional y atractivo para tus seguidores.</p>
+      <p><strong>Precio especial: 7,50 €</strong></p>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_xclick" />
+        <input type="hidden" name="business" value="ivanurreta@gmail.com" />
+        <input type="hidden" name="item_name" value="Plantillas de Diseño para Redes Sociales" />
+        <input type="hidden" name="amount" value="7.50" />
+        <input type="hidden" name="currency_code" value="EUR" />
+        <input type="submit" value="Comprar ahora" />
+      </form>
     </section>
 
-    <section class="oferta">
-      <h3>Pack gamer: teclado + ratón + alfombrilla RGB</h3>
-      <p>Equipamiento perfecto para gamers que buscan estilo y precisión. Iluminación RGB personalizable, teclas mecánicas y diseño ergonómico.</p>
-      <div class="precio">Precio: 110€ <del>150€</del></div>
-      <button onclick="alert('¡Gracias por interesarte! Próximamente link para comprar.')">Comprar Ahora</button>
-    </section>
-
+    <p>¿Tienes dudas o quieres sugerir un producto? <a href="contacto.html">Contáctame aquí</a> y estaré encantado de ayudarte.</p>
   </main>
-
   <footer>
-    <p>© 2025 TechYouthTech | Iván Ureta Corcuera</p>
+    <p>© 2025 TechYouthTech - Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
-

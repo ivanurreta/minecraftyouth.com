@@ -3,14 +3,161 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TechYouthTech - Inicio</title>
+  <title>TechYouthTech - Innovación para jóvenes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Extra CSS para index creativo */
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #f0f0f5;
+      margin: 0;
+      padding: 0 20px 40px;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 40px 0 30px;
+      text-align: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 3.8rem;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      background: linear-gradient(45deg, #ff6a00, #ee0979);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: pulse 2s infinite alternate;
+    }
+
+    @keyframes pulse {
+      0% { filter: brightness(1); }
+      100% { filter: brightness(1.3); }
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: #f0f0f5cc;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.15rem;
+      padding: 10px 18px;
+      border-radius: 30px;
+      transition: background 0.4s, color 0.4s;
+      user-select: none;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      background: #ff6a00;
+      color: #fff;
+      outline: none;
+      box-shadow: 0 0 8px #ff6a00aa;
+      transform: scale(1.05);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 50px auto 0;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.6);
+      padding: 40px 40px 60px;
+      backdrop-filter: blur(10px);
+      color: #eee;
+    }
+
+    main h2 {
+      font-size: 2.8rem;
+      margin-bottom: 25px;
+      letter-spacing: 1.3px;
+      text-align: center;
+      text-shadow: 0 0 6px #ee0979;
+    }
+
+    main p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      line-height: 1.6;
+      text-align: center;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    section.features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 35px;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    section.features article {
+      background: #141c28;
+      flex: 1 1 280px;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(255,106,0,0.25);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    section.features article:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(255,106,0,0.6);
+    }
+
+    section.features h3 {
+      color: #ff6a00;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    section.features p {
+      font-size: 1rem;
+      color: #ccc;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      color: #bbb;
+      margin-top: 70px;
+      font-size: 0.9rem;
+      user-select: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 720px) {
+      main {
+        padding: 30px 20px 40px;
+      }
+      section.features {
+        gap: 25px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>TechYouthTech</h1>
     <nav>
-      <a href="index.html">Inicio</a>
       <a href="reviews.html">Reviews</a>
       <a href="guias.html">Guías</a>
       <a href="ofertas.html">Ofertas</a>
@@ -22,56 +169,27 @@
   </header>
 
   <main>
-    <section>
-      <h2>Bienvenido a TechYouthTech</h2>
-      <p>Tu web de referencia para aprender tecnología, encontrar las mejores ofertas y crecer en el mundo digital. Aquí encontrarás recursos, tutoriales, análisis y consejos para jóvenes apasionados por la tecnología.</p>
-    </section>
+    <h2>Tu portal de tecnología para jóvenes innovadores</h2>
+    <p>Descubre reviews exclusivas, guías detalladas, ofertas increíbles y mucho más para estar siempre a la vanguardia tecnológica.</p>
 
-    <section>
-      <h2>Últimas noticias y novedades</h2>
+    <section class="features">
       <article>
-        <h3>Nuevo smartphone gaming 2025: potenciado para gamers jóvenes</h3>
-        <p>Este año se lanza el TurboMax Z10, un móvil con procesador ultra rápido, pantalla 144Hz y sistema de refrigeración líquida.</p>
-        <a href="blog.html#nuevo-smartphone-gaming-2025">Leer más</a>
+        <h3>Reviews detalladas</h3>
+        <p>Analizamos los gadgets más novedosos con detalle para que sepas qué comprar y por qué.</p>
       </article>
       <article>
-        <h3>Curso gratis de programación en Python para principiantes</h3>
-        <p>Empieza desde cero con este curso paso a paso, perfecto para jóvenes que quieren entrar en el mundo del desarrollo.</p>
-        <a href="guias.html#curso-python-principiantes">Leer más</a>
+        <h3>Guías prácticas</h3>
+        <p>Te ayudamos a sacar el máximo provecho de tus dispositivos con tutoriales paso a paso.</p>
       </article>
-    </section>
-
-    <section>
-      <h2>Guías destacadas</h2>
-      <ul>
-        <li><a href="guias.html#montar-pc">Cómo montar tu primer PC</a></li>
-        <li><a href="guias.html#crear-web">Crear una web gratis en GitHub Pages</a></li>
-        <li><a href="guias.html#editar-videos">Editar vídeos en móvil fácilmente</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Ofertas y descuentos</h2>
-      <p>¡Aprovecha las mejores ofertas tecnológicas actualizadas semanalmente!</p>
-      <ul>
-        <li><a href="ofertas.html#auriculares-zeno">Auriculares Zeno X100 con descuento</a></li>
-        <li><a href="ofertas.html#portatil-blade">Portátil Blade Air 14"</a></li>
-        <li><a href="ofertas.html#smartwatch-youthtracker">Smartwatch YouthTracker</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Comunidad y recursos</h2>
-      <p>Únete a nuestra comunidad en Instagram y contacta con nosotros para colaboraciones, preguntas o compartir tus proyectos.</p>
-      <ul>
-        <li>Email: <a href="mailto:ivanurreta@gmail.com">ivanurreta@gmail.com</a></li>
-        <li>Instagram: <a href="https://www.instagram.com/urreta.08/" target="_blank">@urreta.08</a></li>
-      </ul>
+      <article>
+        <h3>Ofertas exclusivas</h3>
+        <p>Aprovecha descuentos y promociones especiales solo para nuestra comunidad.</p>
+      </article>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 TechYouthTech | Creado por Iván Ureta Corcuera</p>
+    <p>© 2025 TechYouthTech | Iván Ureta Corcuera</p>
   </footer>
 </body>
 </html>

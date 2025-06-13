@@ -3,222 +3,134 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TechYouthTech - Innovación para jóvenes</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <title>TechYouthTech - Iván Ureta</title>
   <link rel="stylesheet" href="styles.css" />
-  <section style="margin-top: 50px; text-align: center;">
-  <h3>Apóyame en Patreon</h3>
-  <p>Si te gusta mi contenido, puedes apoyarme en Patreon haciendo clic en el botón:</p>
-  <a href="https://www.patreon.com/ivanurreta" target="_blank" rel="noopener" style="display: inline-block; margin-top: 10px;">
-    <img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Patreon" style="height: 50px;" />
-  </a>
-</section>
-  <section style="margin-top: 50px; text-align: center;">
-  <h3>Apóyame con una donación en Ko-fi</h3>
-  <p>Si te gusta mi contenido, puedes apoyarme con una donación haciendo clic en el botón:</p>
-  <a href="https://ko-fi.com/urretatxiki2602" target="_blank" rel="noopener" style="display: inline-block; margin-top: 10px;">
-    <img src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" alt="Compra un café en Ko-fi" style="height: 50px;" />
-  </a>
-</section>
-
   <style>
-    /* Extra CSS para index creativo */
-
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #f0f0f5;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0 20px 40px;
-      overflow-x: hidden;
+      padding: 0;
+      background-color: #f4f4f4;
     }
-
     header {
-      padding: 40px 0 30px;
+      background-color: #003366;
+      color: white;
+      padding: 30px;
       text-align: center;
-      position: relative;
-      z-index: 10;
     }
-
     header h1 {
-      font-size: 3.8rem;
-      font-weight: 900;
-      letter-spacing: 3px;
-      margin-bottom: 5px;
-      text-transform: uppercase;
-      background: linear-gradient(45deg, #ff6a00, #ee0979);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: pulse 2s infinite alternate;
+      margin-bottom: 10px;
     }
-
-    @keyframes pulse {
-      0% { filter: brightness(1); }
-      100% { filter: brightness(1.3); }
-    }
-
     nav {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-      margin-top: 15px;
+      background-color: #0057a0;
+      text-align: center;
+      padding: 15px;
     }
-
     nav a {
-      color: #f0f0f5cc;
+      color: white;
       text-decoration: none;
-      font-weight: 600;
-      font-size: 1.15rem;
-      padding: 10px 18px;
-      border-radius: 30px;
-      transition: background 0.4s, color 0.4s;
-      user-select: none;
+      margin: 0 20px;
+      font-weight: bold;
     }
-
-    nav a:hover,
-    nav a:focus {
-      background: #ff6a00;
-      color: #fff;
-      outline: none;
-      box-shadow: 0 0 8px #ff6a00aa;
-      transform: scale(1.05);
+    nav a:hover {
+      text-decoration: underline;
     }
-
     main {
       max-width: 900px;
-      margin: 50px auto 0;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 20px;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.6);
-      padding: 40px 40px 60px;
-      backdrop-filter: blur(10px);
-      color: #eee;
-      <section style="margin-top: 50px; text-align: center;">
-  <h3>Apóyame con una donación en Ko-fi</h3>
-  <p>Si te gusta mi contenido, puedes apoyarme con una donación haciendo clic en el botón:</p>
-  <a href="https://ko-fi.com/urretatxiki2602" target="_blank" rel="noopener" style="display: inline-block; margin-top: 10px;">
-    <img src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" alt="Compra un café en Ko-fi" style="height: 50px;" />
-  </a>
-</section>
+      margin: auto;
+      padding: 40px 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
-
-    main h2 {
-      font-size: 2.8rem;
-      margin-bottom: 25px;
-      letter-spacing: 1.3px;
-      text-align: center;
-      text-shadow: 0 0 6px #ee0979;
+    section {
+      margin-bottom: 40px;
     }
-
-    main p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-      line-height: 1.6;
-      text-align: center;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
+    h2 {
+      color: #003366;
     }
-
-    section.features {
+    .botones-donacion {
       display: flex;
-      flex-wrap: wrap;
-      gap: 35px;
-      justify-content: center;
-      margin-top: 10px;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 30px;
     }
-
-    section.features article {
-      background: #141c28;
-      flex: 1 1 280px;
-      padding: 25px;
-      border-radius: 20px;
-      box-shadow: 0 10px 25px rgba(255,106,0,0.25);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
-      user-select: none;
+    .botones-donacion a, .botones-donacion form {
+      text-align: center;
     }
-
-    section.features article:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 40px rgba(255,106,0,0.6);
+    .donacion-ko-fi {
+      background-color: #29abe0;
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s;
     }
-
-    section.features h3 {
-      color: #ff6a00;
-      font-size: 1.5rem;
-      margin-bottom: 15px;
+    .donacion-ko-fi:hover {
+      background-color: #0077b6;
     }
-
-    section.features p {
-      font-size: 1rem;
-      color: #ccc;
-      line-height: 1.5;
+    .patreon-link {
+      background-color: #ff424d;
+      color: white;
+      padding: 12px 25px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
     }
-
+    .patreon-link:hover {
+      background-color: #c92a33;
+    }
     footer {
       text-align: center;
-      color: #bbb;
-      margin-top: 70px;
-      font-size: 0.9rem;
-      user-select: none;
+      padding: 30px;
+      background-color: #003366;
+      color: white;
     }
-
-    /* Responsive */
-    @media (max-width: 720px) {
-      main {
-        padding: 30px 20px 40px;
-      }
-      section.features {
-        gap: 25px;
-      }
+    footer a {
+      color: #a0cfff;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>TechYouthTech</h1>
-    <nav>
-      <a href="reviews.html">Reviews</a>
-      <a href="guias.html">Guías</a>
-      <a href="ofertas.html">Ofertas</a>
-      <a href="blog.html">Blog</a>
-      <a href="videos.html">Videos</a>
-      <a href="contacto.html">Contacto</a>
-      <a href="privacidad.html">Privacidad</a>
-    </nav>
+    <p>Bienvenido a mi web personal sobre tecnología, edición y guías útiles</p>
   </header>
 
-  <main>
-    <h2>Tu portal de tecnología para jóvenes innovadores</h2>
-    <p>Descubre reviews exclusivas, guías detalladas, ofertas increíbles y mucho más para estar siempre a la vanguardia tecnológica.</p>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="guias.html">Guías</a>
+    <a href="ofertas.html">Ofertas</a>
+    <a href="videos.html">Vídeos</a>
+    <a href="blog.html">Blog</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
 
-    <section class="features">
-      <article>
-        <h3>Reviews detalladas</h3>
-        <p>Analizamos los gadgets más novedosos con detalle para que sepas qué comprar y por qué.</p>
-      </article>
-      <article>
-        <h3>Guías prácticas</h3>
-        <p>Te ayudamos a sacar el máximo provecho de tus dispositivos con tutoriales paso a paso.</p>
-      </article>
-      <article>
-        <h3>Ofertas exclusivas</h3>
-        <p>Aprovecha descuentos y promociones especiales solo para nuestra comunidad.</p>
-      </article>
+  <main>
+    <section>
+      <h2>👋 Sobre mí</h2>
+      <p>¡Hola! Soy Iván Ureta, joven apasionado por la tecnología, edición de vídeo y el mundo digital. He creado esta web para ayudarte a encontrar los mejores recursos, guías y ofertas en un solo lugar.</p>
+      <p>También puedes seguir mis proyectos y vídeos en <a href="https://www.instagram.com/urreta.08/" target="_blank">Instagram</a> y contactarme por correo: <a href="mailto:ivanurreta@gmail.com">ivanurreta@gmail.com</a>.</p>
+    </section>
+
+    <section>
+      <h2>🎁 Apóyame</h2>
+      <p>¿Te gusta mi contenido? Puedes ayudarme a seguir creando con una pequeña donación o uniéndote a mi comunidad de Patreon:</p>
+      <div class="botones-donacion">
+        <a href="https://ko-fi.com/urretatxiki2602" class="donacion-ko-fi" target="_blank">💙 Donar en Ko-fi</a>
+        <a href="https://patreon.com/ivanurreta" class="patreon-link" target="_blank">🎉 Hazte mecenas en Patreon</a>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 TechYouthTech | Iván Ureta Corcuera</p>
+    <p>© 2025 TechYouthTech | Diseñado por Iván Ureta</p>
+    <p>Instagram: <a href="https://www.instagram.com/urreta.08/" target="_blank">@urreta.08</a> | Email: <a href="mailto:ivanurreta@gmail.com">ivanurreta@gmail.com</a></p>
   </footer>
 </body>
 </html>
-<section style="margin-top: 50px; text-align: center;">
-  <h3>Apóyame con una donación en Ko-fi</h3>
-  <p>Si te gusta mi contenido, puedes apoyarme con una donación haciendo clic en el botón:</p>
-  <a href="https://ko-fi.com/urretatxiki2602" target="_blank" rel="noopener" style="display: inline-block; margin-top: 10px;">
-    <img src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" alt="Compra un café en Ko-fi" style="height: 50px;" />
-  </a>
-</section>

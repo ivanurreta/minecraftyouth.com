@@ -4,7 +4,109 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Guías | TechYouthTech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #16222a, #3a6073);
+      color: #e0e0e0;
+      margin: 0 20px 50px;
+    }
+    header {
+      padding: 40px 0 30px;
+      text-align: center;
+      user-select: none;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      color: #17c3b2;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    nav a {
+      color: #d0f0f7cc;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 10px 20px;
+      border-radius: 30px;
+      transition: background 0.4s, color 0.4s;
+    }
+    nav a:hover, nav a:focus {
+      background: #17c3b2;
+      color: #000;
+      outline: none;
+      box-shadow: 0 0 12px #17c3b2cc;
+      transform: scale(1.05);
+    }
+    main {
+      max-width: 950px;
+      margin: auto;
+      background: rgba(20, 40, 50, 0.85);
+      padding: 40px 50px 60px;
+      border-radius: 20px;
+      box-shadow: 0 15px 35px rgba(23, 195, 178, 0.4);
+      backdrop-filter: blur(8px);
+      color: #d4f1f4;
+    }
+    main h2 {
+      font-size: 2.8rem;
+      margin-bottom: 35px;
+      text-align: center;
+      text-shadow: 0 0 8px #17c3b2cc;
+    }
+    article.guia {
+      margin-bottom: 35px;
+      padding-bottom: 25px;
+      border-bottom: 2px solid #17c3b2aa;
+    }
+    article.guia h3 {
+      font-size: 1.8rem;
+      color: #00afa0;
+      margin-bottom: 15px;
+    }
+    article.guia p {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: #bde0df;
+      margin-bottom: 15px;
+    }
+    article.guia ul {
+      list-style: inside disc;
+      margin-left: 20px;
+      color: #a3d2ca;
+    }
+    article.guia ul li {
+      margin-bottom: 8px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 70px;
+      color: #bbb;
+      font-size: 0.9rem;
+      user-select: none;
+    }
+    @media (max-width: 700px) {
+      main {
+        padding: 30px 25px 40px;
+      }
+      article.guia h3 {
+        font-size: 1.5rem;
+      }
+      article.guia p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -22,64 +124,44 @@
   </header>
 
   <main>
-    <h2>Guías completas para jóvenes amantes de la tecnología</h2>
-    <p>En TechYouthTech queremos ayudarte a dar tus primeros pasos en el mundo tecnológico, con guías paso a paso, fáciles de entender y actualizadas para 2025.</p>
+    <h2>Guías paso a paso para dominar la tecnología</h2>
 
-    <section id="montar-pc">
-      <h3>Cómo montar tu primer PC en 2025</h3>
-      <p>Montar tu propio PC puede parecer complicado, pero con esta guía detallada aprenderás a elegir componentes, ensamblarlos y configurar todo para un rendimiento óptimo.</p>
-      <ol>
-        <li><strong>Elige la placa base adecuada:</strong> Debe ser compatible con tu procesador y tener los puertos que necesitas.</li>
-        <li><strong>Selecciona el procesador (CPU):</strong> Para gaming o edición, un Ryzen 5 o Intel i5 de última generación es ideal.</li>
-        <li><strong>Memoria RAM:</strong> 16GB es lo recomendado para la mayoría de tareas.</li>
-        <li><strong>Almacenamiento:</strong> Usa un SSD NVMe para velocidad y un HDD para almacenamiento extra.</li>
-        <li><strong>Tarjeta gráfica:</strong> Fundamental para juegos o diseño. NVIDIA o AMD, según presupuesto.</li>
-        <li><strong>Fuente de alimentación:</strong> Debe ser de buena calidad y suficiente potencia (al menos 550W).</li>
-        <li><strong>Montaje:</strong> Sigue tutoriales en vídeo para evitar errores comunes.</li>
-        <li><strong>Instalación de sistema operativo:</strong> Windows 10/11 o Linux según preferencia.</li>
-      </ol>
-      <p>Consejo: Haz una lista y presupuesto antes de comprar y compara precios en tiendas online.</p>
-    </section>
-
-    <section id="crear-web">
-      <h3>Crear una web gratis en GitHub Pages</h3>
-      <p>Ideal para estudiantes y proyectos personales. Sigue estos pasos para crear tu primera página web pública y profesional.</p>
-      <ol>
-        <li><strong>Crea una cuenta en GitHub:</strong> Si no tienes una, regístrate en <a href="https://github.com" target="_blank">github.com</a>.</li>
-        <li><strong>Abre un nuevo repositorio:</strong> Ponle nombre, por ejemplo <code>mi-web</code>.</li>
-        <li><strong>Sube tus archivos HTML, CSS y JS:</strong> Puedes usar la interfaz web o Git.</li>
-        <li><strong>Activa GitHub Pages:</strong> En la configuración del repositorio, selecciona la rama main y la carpeta raíz para publicar.</li>
-        <li><strong>Visita la URL que GitHub te proporciona:</strong> Será algo como <code>https://tuusuario.github.io/mi-web/</code>.</li>
-      </ol>
-      <p>Esta es una forma profesional, rápida y gratuita para empezar a crear presencia online.</p>
-    </section>
-
-    <section id="editar-videos">
-      <h3>Editar vídeos en móvil fácilmente</h3>
-      <p>Para crear contenido en redes, estos apps gratuitas te ayudarán a editar vídeos desde tu smartphone sin complicaciones:</p>
+    <article class="guia">
+      <h3>Cómo optimizar el rendimiento de tu PC para gaming</h3>
+      <p>Si quieres exprimir al máximo tu PC y conseguir mejores FPS en tus juegos favoritos, sigue estos consejos esenciales que te ayudarán a mejorar la velocidad y estabilidad del sistema.</p>
       <ul>
-        <li><strong>CapCut:</strong> Editor potente con efectos y plantillas.</li>
-        <li><strong>InShot:</strong> Fácil para cortar y añadir música.</li>
-        <li><strong>VN Video Editor:</strong> Más opciones de control y efectos.</li>
+        <li>Actualiza los controladores gráficos y del sistema.</li>
+        <li>Elimina programas y procesos innecesarios que consumen recursos.</li>
+        <li>Configura la prioridad de los juegos en el administrador de tareas.</li>
+        <li>Optimiza la configuración gráfica dentro de cada juego para equilibrar calidad y rendimiento.</li>
+        <li>Haz limpieza física de polvo en el hardware para evitar sobrecalentamientos.</li>
       </ul>
-      <p>Consejo: Empieza con clips cortos y practica mucho para mejorar.</p>
-    </section>
+    </article>
 
-    <section>
-      <h3>Otras guías útiles</h3>
+    <article class="guia">
+      <h3>Guía definitiva para crear contenido atractivo en YouTube</h3>
+      <p>Si quieres empezar un canal y crecer, necesitas más que solo grabar videos. Aquí te contamos cómo planificar, grabar y editar contenido que enganche y crezca con el tiempo.</p>
       <ul>
-        <li><a href="#">Cómo aprender a programar desde cero</a></li>
-        <li><a href="#">Configurar tu primer servidor web</a></li>
-        <li><a href="#">Mejores apps para productividad juvenil</a></li>
-        <li><a href="#">Consejos para seguridad online</a></li>
+        <li>Define tu nicho y público objetivo.</li>
+        <li>Planifica el contenido con un calendario regular.</li>
+        <li>Invierte en buena iluminación y sonido, es más importante que la cámara.</li>
+        <li>Aprende técnicas básicas de edición para hacer tus videos más dinámicos.</li>
+        <li>Promociona tu canal en redes sociales y colabora con otros creadores.</li>
       </ul>
-    </section>
+    </article>
 
-    <section>
-      <h2>¿Quieres que preparemos una guía especial para ti?</h2>
-      <p>Contacta con nosotros para sugerir temas o dudas que quieras que resolvamos en próximos posts.</p>
-      <p>Email: <a href="mailto:ivanurreta@gmail.com">ivanurreta@gmail.com</a></p>
-    </section>
+    <article class="guia">
+      <h3>Trucos para aprovechar al máximo tu smartphone</h3>
+      <p>¿Sabías que tu móvil puede hacer mucho más con solo unos ajustes? Descubre funciones ocultas y apps recomendadas que mejorarán tu experiencia diaria.</p>
+      <ul>
+        <li>Activa los gestos y accesos rápidos para tareas frecuentes.</li>
+        <li>Utiliza apps de automatización para tareas repetitivas.</li>
+        <li>Optimiza la batería con modos ahorro y gestión de apps en segundo plano.</li>
+        <li>Personaliza la pantalla con widgets y launchers según tu estilo.</li>
+        <li>Configura copias de seguridad automáticas para no perder nada.</li>
+      </ul>
+    </article>
+
   </main>
 
   <footer>

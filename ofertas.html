@@ -4,49 +4,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Ofertas - TechYouthTech</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f2f2f7;
+      background-color: #f4f6f8;
       margin: 0; padding: 0;
-      color: #333;
     }
     header, footer {
-      background-color: #0070ba;
+      background-color: #0057a0;
       color: white;
+      padding: 20px;
       text-align: center;
-      padding: 20px 10px;
     }
     main {
       max-width: 900px;
-      margin: 30px auto;
+      margin: 40px auto;
       background: white;
-      padding: 25px 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     }
-    h1, h2 {
-      color: #005a9c;
+    h1, h2, h3 {
+      color: #003366;
     }
     .offer {
-      border: 1px solid #ddd;
+      background-color: #e6f0ff;
+      border-left: 6px solid #0070ba;
+      padding: 20px;
+      margin-bottom: 30px;
       border-radius: 8px;
-      padding: 15px;
-      margin-bottom: 25px;
-      background-color: #e9f1fc;
-      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
-      transition: background-color 0.3s ease;
     }
     .offer:hover {
-      background-color: #d0e4fc;
+      background-color: #d6e8ff;
     }
     .offer h3 {
       margin-top: 0;
-      color: #004080;
-    }
-    .offer p {
-      font-size: 1.1em;
-      line-height: 1.4;
     }
     form {
       margin-top: 15px;
@@ -55,36 +48,39 @@
       background-color: #0070ba;
       color: white;
       border: none;
-      padding: 12px 25px;
-      font-weight: bold;
+      padding: 12px 20px;
       font-size: 1em;
+      font-weight: bold;
       border-radius: 5px;
       cursor: pointer;
-      transition: background-color 0.25s ease;
+      transition: background-color 0.3s;
     }
     input[type="submit"]:hover {
       background-color: #005a87;
     }
-    footer p {
-      font-size: 0.9em;
-      margin: 10px 0 0;
+    a {
+      color: #0057a0;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Ofertas Exclusivas en TechYouthTech</h1>
-    <p>Las mejores promociones para que aproveches la tecnología sin gastar de más</p>
+    <h1>Ofertas TechYouthTech</h1>
+    <p>¡Las mejores oportunidades para que aprendas y crezcas!</p>
   </header>
   <main>
     <section class="offer">
-      <h3>Guía Completa de Configuración de PC Gamer</h3>
-      <p>¿Quieres montar tu propio PC gamer sin complicaciones? Esta guía paso a paso te ayuda a elegir los componentes adecuados y a ensamblar tu equipo ideal. Ideal para principiantes y amantes de los videojuegos.</p>
+      <h3>🛠️ Guía para Montar tu PC Gamer</h3>
+      <p>Descubre paso a paso cómo montar tu propio ordenador gamer con presupuesto y piezas recomendadas. ¡Ideal para jugadores nuevos o avanzados!</p>
       <p><strong>Precio especial: 7,50 €</strong></p>
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
         <input type="hidden" name="cmd" value="_xclick" />
         <input type="hidden" name="business" value="ivanurreta@gmail.com" />
-        <input type="hidden" name="item_name" value="Guía Completa de Configuración de PC Gamer" />
+        <input type="hidden" name="item_name" value="Guía PC Gamer" />
         <input type="hidden" name="amount" value="7.50" />
         <input type="hidden" name="currency_code" value="EUR" />
         <input type="submit" value="Comprar ahora" />
@@ -92,13 +88,13 @@
     </section>
 
     <section class="offer">
-      <h3>Curso Básico de Edición de Video</h3>
-      <p>Aprende a editar videos con herramientas gratuitas y profesionales. Incluye tutoriales para principiantes, técnicas básicas y trucos para mejorar la calidad de tus videos.</p>
+      <h3>🎬 Curso Básico de Edición de Vídeo</h3>
+      <p>Aprende los fundamentos de la edición de vídeo con programas gratuitos como CapCut y DaVinci Resolve. Incluye tutoriales paso a paso y plantillas editables.</p>
       <p><strong>Precio especial: 7,50 €</strong></p>
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
         <input type="hidden" name="cmd" value="_xclick" />
         <input type="hidden" name="business" value="ivanurreta@gmail.com" />
-        <input type="hidden" name="item_name" value="Curso Básico de Edición de Video" />
+        <input type="hidden" name="item_name" value="Curso de Edición de Vídeo" />
         <input type="hidden" name="amount" value="7.50" />
         <input type="hidden" name="currency_code" value="EUR" />
         <input type="submit" value="Comprar ahora" />
@@ -106,23 +102,24 @@
     </section>
 
     <section class="offer">
-      <h3>Plantillas de Diseño para Redes Sociales</h3>
-      <p>Obtén un pack con más de 50 plantillas editables para Instagram, Facebook y YouTube. Ahorra tiempo creando contenido profesional y atractivo para tus seguidores.</p>
+      <h3>📱 Plantillas para Redes Sociales</h3>
+      <p>Accede a más de 50 plantillas creativas para Instagram y TikTok. Edítalas fácilmente para mejorar tu marca o perfil personal.</p>
       <p><strong>Precio especial: 7,50 €</strong></p>
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
         <input type="hidden" name="cmd" value="_xclick" />
         <input type="hidden" name="business" value="ivanurreta@gmail.com" />
-        <input type="hidden" name="item_name" value="Plantillas de Diseño para Redes Sociales" />
+        <input type="hidden" name="item_name" value="Plantillas para redes" />
         <input type="hidden" name="amount" value="7.50" />
         <input type="hidden" name="currency_code" value="EUR" />
         <input type="submit" value="Comprar ahora" />
       </form>
     </section>
 
-    <p>¿Tienes dudas o quieres sugerir un producto? <a href="contacto.html">Contáctame aquí</a> y estaré encantado de ayudarte.</p>
+    <p>¿Tienes alguna duda o quieres recomendar algo nuevo? <a href="contacto.html">Contáctame aquí</a>.</p>
   </main>
   <footer>
-    <p>© 2025 TechYouthTech - Todos los derechos reservados.</p>
+    <p>© 2025 TechYouthTech | Diseñado por Iván Ureta</p>
+    <p>Instagram: <a href="https://www.instagram.com/urreta.08/" target="_blank">@urreta.08</a> | Email: <a href="mailto:ivanurreta@gmail.com">ivanurreta@gmail.com</a></p>
   </footer>
 </body>
 </html>

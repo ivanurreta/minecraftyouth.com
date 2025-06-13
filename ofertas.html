@@ -1,161 +1,51 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ofertas - TechYouthTech</title>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Rubik', sans-serif;
-      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
-      color: #222;
-    }
-    header {
-      text-align: center;
-      padding: 60px 20px;
-      background: linear-gradient(to right, #667eea, #764ba2);
-      color: white;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2rem;
-    }
-    nav {
-      background-color: #222;
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 20px;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-    nav a:hover {
-      color: #ffcc00;
-      transform: scale(1.1);
-    }
-    main {
-      max-width: 1100px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-    .producto {
-      background: #fff;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      margin-bottom: 40px;
-      padding: 20px;
-      transition: 0.3s;
-    }
-    .producto:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-    }
-    .producto img {
-      max-width: 100%;
-      border-radius: 12px;
-    }
-    .producto h3 {
-      font-size: 1.6rem;
-      color: #333;
-      margin: 15px 0 10px;
-    }
-    .producto p {
-      font-size: 1rem;
-      color: #555;
-    }
-    .boton-comprar {
-      display: inline-block;
-      margin-top: 15px;
-      background: #ff6600;
-      color: white;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s, transform 0.2s;
-    }
-    .boton-comprar:hover {
-      background: #cc5200;
-      transform: scale(1.05);
-    }
-    footer {
-      text-align: center;
-      background: #222;
-      color: white;
-      padding: 40px 20px;
-    }
-    footer a {
-      color: #88c0ff;
-      text-decoration: none;
-    }
-  </style>
-</head>
-<body>
+<section class="ofertas">
+  <h2>🛍️ Nuestras Ofertas</h2>
 
-  <header>
-    <h1>🎯 Ofertas Exclusivas</h1>
-    <p>Productos tech, recursos digitales y herramientas con descuentos brutales.</p>
-  </header>
+  <div class="producto">
+    <h3>Plantilla Web Creativa</h3>
+    <p>Ideal para tu portfolio, rápida y moderna.</p>
+    <p><strong>Precio: 4,99 €</strong></p>
+    <a href="https://www.paypal.com/paypalme/urretatxiki/4.99" target="_blank" class="boton-comprar">Comprar ahora</a>
+  </div>
 
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="reviews.html">Reviews</a>
-    <a href="guias.html">Guías</a>
-    <a href="ofertas.html">Ofertas</a>
-    <a href="videos.html">Vídeos</a>
-    <a href="blog.html">Blog</a>
-    <a href="contacto.html">Contacto</a>
-  </nav>
+  <div class="producto">
+    <h3>Guía para Ganar Dinero Online</h3>
+    <p>Consejos reales y métodos probados para monetizar tus habilidades.</p>
+    <p><strong>Precio: 2,99 €</strong></p>
+    <a href="https://www.paypal.com/paypalme/urretatxiki/2.99" target="_blank" class="boton-comprar">Comprar ahora</a>
+  </div>
+</section>
 
-  <main>
+<style>
+.ofertas {
+  padding: 40px;
+  background-color: #f7f9fc;
+  border-radius: 20px;
+  text-align: center;
+}
 
-    <div class="producto">
-      <img src="https://via.placeholder.com/800x400.png?text=Auriculares+Gaming+RGB" alt="Auriculares RGB">
-      <h3>Auriculares Gaming RGB 🔊</h3>
-      <p>Con iluminación LED, sonido envolvente y micrófono de alta calidad.</p>
-      <p><strong>Precio: 19,99€</strong></p>
-      <a class="boton-comprar" href="https://www.paypal.com/paypalme/ivanurreta/19.99" target="_blank">Comprar ahora</a>
-    </div>
+.producto {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
 
-    <div class="producto">
-      <img src="https://via.placeholder.com/800x400.png?text=Teclado+Mecánico+Retroiluminado" alt="Teclado Mecánico">
-      <h3>Teclado Mecánico Retroiluminado ⌨️</h3>
-      <p>Perfecto para trabajar y jugar. Retroiluminación personalizable y tacto pro.</p>
-      <p><strong>Precio: 34,95€</strong></p>
-      <a class="boton-comprar" href="https://www.paypal.com/paypalme/ivanurreta/34.95" target="_blank">Comprar ahora</a>
-    </div>
+.boton-comprar {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 20px;
+  background-color: #0070ba;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
 
-    <div class="producto">
-      <img src="https://via.placeholder.com/800x400.png?text=Plantillas+Adobe+Premiere+Pro" alt="Plantillas Premiere">
-      <h3>Plantillas para Adobe Premiere 🎬</h3>
-      <p>Pack con intros, transiciones y efectos listos para usar. ¡Edita como un pro!</p>
-      <p><strong>Precio: 4,99€</strong></p>
-      <a class="boton-comprar" href="https://www.paypal.com/paypalme/ivanurreta/4.99" target="_blank">Comprar ahora</a>
-    </div>
-
-  </main>
-
-  <footer>
-    <p>© 2025 TechYouthTech — Creado por Iván Ureta</p>
-    <p>
-      <a href="mailto:ivanurreta@gmail.com">ivanurreta@gmail.com</a> |
-      <a href="https://www.instagram.com/urreta.08/" target="_blank">@urreta.08</a> |
-      <a href="https://ko-fi.com/urretatxiki2602" target="_blank">💙 Donar en Ko-fi</a> |
-      <a href="https://patreon.com/ivanurreta" target="_blank">🚀 Apóyame en Patreon</a>
-    </p>
-  </footer>
-
-</body>
-</html>
+.boton-comprar:hover {
+  background-color: #005c9d;
+}
+</style>

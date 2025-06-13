@@ -1,122 +1,142 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ofertas - TechYouthTech</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f6f8;
-      margin: 0; padding: 0;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e6f0ff, #fefeff);
+      color: #222;
     }
-    header, footer {
-      background-color: #0057a0;
-      color: white;
-      padding: 20px;
+    header {
+      background: linear-gradient(to right, #1c92d2, #f2fcfe);
+      padding: 50px 20px;
       text-align: center;
-    }
-    main {
-      max-width: 900px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    }
-    h1, h2, h3 {
       color: #003366;
     }
-    .offer {
-      background-color: #e6f0ff;
-      border-left: 6px solid #0070ba;
+    nav {
+      background-color: #003366;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background-color: #0057a0;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h2 {
+      color: #1c3d5a;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .producto {
+      background-color: #fff;
+      border-radius: 12px;
       padding: 20px;
       margin-bottom: 30px;
-      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    .offer:hover {
-      background-color: #d6e8ff;
+    .producto img {
+      max-width: 100%;
+      border-radius: 10px;
     }
-    .offer h3 {
-      margin-top: 0;
+    .producto h3 {
+      margin: 15px 0 10px;
+      font-size: 1.4rem;
     }
-    form {
-      margin-top: 15px;
+    .producto p {
+      margin: 0 0 10px;
+      font-size: 1rem;
     }
-    input[type="submit"] {
-      background-color: #0070ba;
+    .boton-comprar {
+      background-color: #ff6600;
       color: white;
+      padding: 12px 25px;
+      font-size: 16px;
       border: none;
-      padding: 12px 20px;
-      font-size: 1em;
-      font-weight: bold;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-    input[type="submit"]:hover {
-      background-color: #005a87;
-    }
-    a {
-      color: #0057a0;
+      border-radius: 6px;
       text-decoration: none;
+      transition: background 0.3s;
     }
-    a:hover {
-      text-decoration: underline;
+    .boton-comprar:hover {
+      background-color: #cc5200;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    footer a {
+      color: #a0cfff;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Ofertas TechYouthTech</h1>
-    <p>¡Las mejores oportunidades para que aprendas y crezcas!</p>
+    <h1>Ofertas Exclusivas</h1>
+    <p>Consigue productos de tecnología y recursos digitales con descuento</p>
   </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="guias.html">Guías</a>
+    <a href="ofertas.html">Ofertas</a>
+    <a href="videos.html">Vídeos</a>
+    <a href="blog.html">Blog</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
   <main>
-    <section class="offer">
-      <h3>🛠️ Guía para Montar tu PC Gamer</h3>
-      <p>Descubre paso a paso cómo montar tu propio ordenador gamer con presupuesto y piezas recomendadas. ¡Ideal para jugadores nuevos o avanzados!</p>
-      <p><strong>Precio especial: 7,50 €</strong></p>
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-        <input type="hidden" name="cmd" value="_xclick" />
-        <input type="hidden" name="business" value="ivanurreta@gmail.com" />
-        <input type="hidden" name="item_name" value="Guía PC Gamer" />
-        <input type="hidden" name="amount" value="7.50" />
-        <input type="hidden" name="currency_code" value="EUR" />
-        <input type="submit" value="Comprar ahora" />
-      </form>
-    </section>
+    <h2>🤑 Productos en Oferta</h2>
 
-    <section class="offer">
-      <h3>🎬 Curso Básico de Edición de Vídeo</h3>
-      <p>Aprende los fundamentos de la edición de vídeo con programas gratuitos como CapCut y DaVinci Resolve. Incluye tutoriales paso a paso y plantillas editables.</p>
-      <p><strong>Precio especial: 7,50 €</strong></p>
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-        <input type="hidden" name="cmd" value="_xclick" />
-        <input type="hidden" name="business" value="ivanurreta@gmail.com" />
-        <input type="hidden" name="item_name" value="Curso de Edición de Vídeo" />
-        <input type="hidden" name="amount" value="7.50" />
-        <input type="hidden" name="currency_code" value="EUR" />
-        <input type="submit" value="Comprar ahora" />
-      </form>
-    </section>
+    <div class="producto">
+      <img src="https://via.placeholder.com/400x250.png?text=Auriculares+Gaming" alt="Auriculares Gaming">
+      <h3>Auriculares Gaming RGB</h3>
+      <p>Sonido envolvente, luz LED y micrófono incluido. Ideal para gamers.</p>
+      <p><strong>Precio: 19,99€</strong></p>
+      <a href="https://www.paypal.com/paypalme/ivanurreta/19.99" target="_blank" class="boton-comprar">Comprar ahora</a>
+    </div>
 
-    <section class="offer">
-      <h3>📱 Plantillas para Redes Sociales</h3>
-      <p>Accede a más de 50 plantillas creativas para Instagram y TikTok. Edítalas fácilmente para mejorar tu marca o perfil personal.</p>
-      <p><strong>Precio especial: 7,50 €</strong></p>
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-        <input type="hidden" name="cmd" value="_xclick" />
-        <input type="hidden" name="business" value="ivanurreta@gmail.com" />
-        <input type="hidden" name="item_name" value="Plantillas para redes" />
-        <input type="hidden" name="amount" value="7.50" />
-        <input type="hidden" name="currency_code" value="EUR" />
-        <input type="submit" value="Comprar ahora" />
-      </form>
-    </section>
+    <div class="producto">
+      <img src="https://via.placeholder.com/400x250.png?text=Teclado+Mecánico" alt="Teclado Mecánico">
+      <h3>Teclado Mecánico Retroiluminado</h3>
+      <p>Ideal para escribir rápido y jugar. Retroiluminación multicolor.</p>
+      <p><strong>Precio: 34,95€</strong></p>
+      <a href="https://www.paypal.com/paypalme/ivanurreta/34.95" target="_blank" class="boton-comprar">Comprar ahora</a>
+    </div>
 
-    <p>¿Tienes alguna duda o quieres recomendar algo nuevo? <a href="contacto.html">Contáctame aquí</a>.</p>
+    <div class="producto">
+      <img src="https://via.placeholder.com/400x250.png?text=Pack+Plantillas+Premiere" alt="Plantillas Premiere">
+      <h3>Pack de Plantillas para Adobe Premiere Pro</h3>
+      <p>Ediciones profesionales con solo arrastrar y soltar.</p>
+      <p><strong>Precio: 4,99€</strong></p>
+      <a href="https://www.paypal.com/paypalme/ivanurreta/4.99" target="_blank" class="boton-comprar">Comprar ahora</a>
+    </div>
   </main>
+
   <footer>
     <p>© 2025 TechYouthTech | Diseñado por Iván Ureta</p>
     <p>Instagram: <a href="https://www.instagram.com/urreta.08/" target="_blank">@urreta.08</a> | Email: <a href="mailto:ivanurreta@gmail.com">ivanurreta@gmail.com</a></p>

@@ -2,72 +2,75 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TechYouthTech - Iván Ureta</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      color: #222;
     }
     header {
-      background-color: #003366;
-      color: white;
-      padding: 30px;
+      background: linear-gradient(to right, #1c92d2, #f2fcfe);
+      padding: 60px 20px;
       text-align: center;
+      color: #003366;
     }
     header h1 {
-      margin-bottom: 10px;
+      font-size: 3rem;
+      margin: 0;
     }
     nav {
-      background-color: #0057a0;
-      text-align: center;
-      padding: 15px;
+      display: flex;
+      justify-content: center;
+      background-color: #003366;
+      padding: 12px 0;
+      flex-wrap: wrap;
     }
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 20px;
+      margin: 0 15px;
+      padding: 8px 12px;
       font-weight: bold;
     }
     nav a:hover {
-      text-decoration: underline;
+      background-color: #0057a0;
+      border-radius: 5px;
     }
     main {
-      max-width: 900px;
-      margin: auto;
       padding: 40px 20px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      max-width: 1000px;
+      margin: auto;
     }
     section {
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
     h2 {
-      color: #003366;
+      font-size: 2rem;
+      color: #1c3d5a;
+      margin-bottom: 10px;
     }
     .botones-donacion {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 20px;
-      margin-top: 30px;
+      margin-top: 20px;
     }
-    .botones-donacion a, .botones-donacion form {
-      text-align: center;
+    .botones-donacion a {
+      padding: 14px 28px;
+      font-size: 16px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
     }
     .donacion-ko-fi {
       background-color: #29abe0;
       color: white;
-      padding: 12px 25px;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 6px;
-      text-decoration: none;
-      transition: background-color 0.3s;
     }
     .donacion-ko-fi:hover {
       background-color: #0077b6;
@@ -75,20 +78,15 @@
     .patreon-link {
       background-color: #ff424d;
       color: white;
-      padding: 12px 25px;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 6px;
-      text-decoration: none;
     }
     .patreon-link:hover {
       background-color: #c92a33;
     }
     footer {
-      text-align: center;
-      padding: 30px;
       background-color: #003366;
       color: white;
+      padding: 30px;
+      text-align: center;
     }
     footer a {
       color: #a0cfff;
@@ -98,7 +96,7 @@
 <body>
   <header>
     <h1>TechYouthTech</h1>
-    <p>Bienvenido a mi web personal sobre tecnología, edición y guías útiles</p>
+    <p>Bienvenido a mi universo digital: tecnología, edición y mucho más</p>
   </header>
 
   <nav>
@@ -113,14 +111,14 @@
 
   <main>
     <section>
-      <h2>👋 Sobre mí</h2>
-      <p>¡Hola! Soy Iván Ureta, joven apasionado por la tecnología, edición de vídeo y el mundo digital. He creado esta web para ayudarte a encontrar los mejores recursos, guías y ofertas en un solo lugar.</p>
-      <p>También puedes seguir mis proyectos y vídeos en <a href="https://www.instagram.com/urreta.08/" target="_blank">Instagram</a> y contactarme por correo: <a href="mailto:ivanurreta@gmail.com">ivanurreta@gmail.com</a>.</p>
+      <h2>🚀 ¿Quién soy?</h2>
+      <p>¡Hola! Soy <strong>Iván Ureta</strong>, un joven entusiasta de la tecnología, el desarrollo digital y la edición audiovisual. En esta web comparto lo que más me apasiona: reviews de productos, guías útiles, ofertas increíbles y contenido creativo para jóvenes como tú que quieren aprender, mejorar o simplemente disfrutar del mundo tech.</p>
+      <p>Sígueme en <a href="https://www.instagram.com/urreta.08/" target="_blank">Instagram</a> o escríbeme a <a href="mailto:ivanurreta@gmail.com">ivanurreta@gmail.com</a> para colaborar o preguntar cualquier cosa.</p>
     </section>
 
     <section>
       <h2>🎁 Apóyame</h2>
-      <p>¿Te gusta mi contenido? Puedes ayudarme a seguir creando con una pequeña donación o uniéndote a mi comunidad de Patreon:</p>
+      <p>¿Te gusta lo que hago? Puedes ayudarme a mantener y mejorar este proyecto con una pequeña donación o suscribiéndote a mi Patreon. ¡Todo apoyo es súper bienvenido! 💙</p>
       <div class="botones-donacion">
         <a href="https://ko-fi.com/urretatxiki2602" class="donacion-ko-fi" target="_blank">💙 Donar en Ko-fi</a>
         <a href="https://patreon.com/ivanurreta" class="patreon-link" target="_blank">🎉 Hazte mecenas en Patreon</a>

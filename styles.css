@@ -1,0 +1,41 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #333;
+}
+header {
+  background-color: #0073e6;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 0 1em;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a.active {
+  text-decoration: underline;
+}
+main {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 1em;
+  background: white;
+  border-radius: 5px;
+}
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+footer a {
+  color: #55aaff;
+  text-decoration: none;
+}

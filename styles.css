@@ -1,144 +1,55 @@
-/* Estilos globales */
-body {
-  font-family: 'Roboto Slab', serif;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: #f0f0f5;
-  margin: 0 30px 60px;
-  line-height: 1.7;
-  background-attachment: fixed;
-  user-select: none;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Política de Privacidad | TechYouthTech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>TechYouthTech</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="guias.html">Guías</a>
+      <a href="ofertas.html">Ofertas</a>
+      <a href="blog.html">Blog</a>
+      <a href="videos.html">Videos</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="privacidad.html">Privacidad</a>
+    </nav>
+  </header>
 
-header {
-  padding: 40px 0 20px;
-  text-align: center;
-  background: rgba(44, 62, 80, 0.85);
-  color: #ecf0f1;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
-}
+  <main>
+    <h2>Política de Privacidad</h2>
 
-header h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  letter-spacing: 3px;
-  margin: 0;
-  text-shadow: 0 0 15px #9b59b6cc;
-}
+    <p>En <strong>TechYouthTech</strong> nos comprometemos a proteger tu privacidad y garantizar que tu información personal esté segura. Esta política explica cómo recopilamos, usamos y protegemos los datos que nos proporcionas al visitar nuestro sitio web.</p>
 
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 28px;
-  flex-wrap: wrap;
-  background: rgba(52, 73, 94, 0.85);
-  padding: 18px 0;
-  box-shadow: inset 0 -3px 8px rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  user-select: none;
-}
+    <h3>1. Información que recopilamos</h3>
+    <p>Cuando visitas TechYouthTech, podemos recopilar información personal como tu nombre, correo electrónico y mensajes que nos envías a través del formulario de contacto. También podemos recolectar datos técnicos sobre tu dispositivo y navegación para mejorar tu experiencia.</p>
 
-nav a {
-  color: #ecf0f1;
-  font-weight: 700;
-  font-size: 1.15rem;
-  text-decoration: none;
-  padding: 12px 28px;
-  border-radius: 30px;
-  background: linear-gradient(135deg, #8e44ad, #3498db);
-  box-shadow: 0 4px 12px #8e44adcc;
-  transition: all 0.3s ease;
-  user-select: none;
-}
+    <h3>2. Uso de la información</h3>
+    <p>La información que nos facilitas se utiliza exclusivamente para responder tus consultas, enviarte información relevante, y mejorar el contenido y los servicios que ofrecemos. Nunca venderemos tus datos a terceros.</p>
 
-nav a:hover,
-nav a:focus {
-  background: linear-gradient(135deg, #f39c12, #f1c40f);
-  color: #2c3e50;
-  box-shadow: 0 6px 18px #f39c12cc;
-  transform: scale(1.12);
-  outline: none;
-}
+    <h3>3. Cookies y tecnologías similares</h3>
+    <p>Usamos cookies para analizar el tráfico y comportamiento en nuestra web, personalizar contenido y mejorar la usabilidad. Puedes configurar tu navegador para aceptar o rechazar cookies según prefieras.</p>
 
-main {
-  max-width: 900px;
-  margin: 40px auto 60px;
-  background: rgba(255, 255, 255, 0.95);
-  padding: 50px 55px;
-  border-radius: 28px;
-  box-shadow: 0 25px 65px rgba(0, 0, 0, 0.15);
-  color: #2c3e50;
-  user-select: text;
-  font-size: 1.15rem;
-  line-height: 1.75;
-  font-weight: 400;
-}
+    <h3>4. Seguridad</h3>
+    <p>Implementamos medidas técnicas y administrativas para proteger tus datos contra accesos no autorizados, alteraciones o destrucción.</p>
 
-main h2 {
-  font-size: 3rem;
-  font-weight: 900;
-  margin-bottom: 40px;
-  color: #9b59b6;
-  text-align: center;
-  letter-spacing: 1.7px;
-  text-shadow: 0 0 18px #9b59b6aa;
-}
+    <h3>5. Tus derechos</h3>
+    <p>Tienes derecho a acceder, corregir o eliminar tus datos personales, así como a solicitar la limitación del tratamiento o la portabilidad de los mismos. Para ejercer estos derechos, contáctanos en <a href="mailto:ivanurreta@gmail.com">ivanurreta@gmail.com</a>.</p>
 
-main h3 {
-  font-size: 2rem;
-  margin-top: 45px;
-  margin-bottom: 20px;
-  color: #8e44ad;
-  text-shadow: 0 0 8px #8e44ad99;
-}
+    <h3>6. Cambios en esta política</h3>
+    <p>Podemos actualizar esta política de privacidad para cumplir con nuevas leyes o mejorar nuestras prácticas. Te recomendamos revisar esta página periódicamente.</p>
 
-main p {
-  margin-bottom: 25px;
-  font-size: 1.15rem;
-  color: #34495e;
-}
+    <p>Si tienes dudas o inquietudes, no dudes en <a href="contacto.html">contactarnos</a>. Gracias por confiar en TechYouthTech.</p>
+  </main>
 
-main a {
-  color: #9b59b6;
-  font-weight: 700;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.3s ease;
-}
-
-main a:hover,
-main a:focus {
-  border-bottom: 2px solid #9b59b6;
-  outline: none;
-}
-
-footer {
-  text-align: center;
-  padding: 28px 0;
-  font-size: 1rem;
-  color: #dcdde1;
-  background: rgba(44, 62, 80, 0.85);
-  user-select: none;
-  letter-spacing: 1.1px;
-  box-shadow: inset 0 3px 8px rgba(255, 255, 255, 0.07);
-}
-
-@media (max-width: 720px) {
-  body {
-    margin: 0 15px 40px;
-  }
-  main {
-    padding: 35px 25px;
-    font-size: 1.05rem;
-  }
-  main h2 {
-    font-size: 2.4rem;
-  }
-  main h3 {
-    font-size: 1.6rem;
-  }
-  nav a {
-    font-size: 1rem;
-    padding: 10px 20px;
-  }
-}
+  <footer>
+    <p>© 2025 TechYouthTech | Iván Ureta Corcuera</p>
+  </footer>
+</body>
+</html>

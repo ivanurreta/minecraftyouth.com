@@ -1,102 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ofertas - TechYouthTech</title>
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #e6f0ff, #fefeff);
+      font-family: 'Rubik', sans-serif;
+      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
       color: #222;
     }
     header {
-      background: linear-gradient(to right, #1c92d2, #f2fcfe);
-      padding: 50px 20px;
       text-align: center;
-      color: #003366;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
     }
     nav {
-      background-color: #003366;
+      background-color: #222;
       display: flex;
       justify-content: center;
+      padding: 10px 0;
       flex-wrap: wrap;
-      padding: 10px;
     }
     nav a {
-      color: white;
+      color: #fff;
       text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
+      margin: 0 20px;
+      font-weight: 600;
+      transition: 0.3s;
     }
     nav a:hover {
-      background-color: #0057a0;
-      padding: 5px 10px;
-      border-radius: 4px;
+      color: #ffcc00;
+      transform: scale(1.1);
     }
     main {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
       padding: 40px 20px;
     }
-    h2 {
-      color: #1c3d5a;
-      font-size: 2rem;
-      margin-bottom: 30px;
-      text-align: center;
-    }
     .producto {
-      background-color: #fff;
-      border-radius: 12px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
       padding: 20px;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      transition: 0.3s;
+    }
+    .producto:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
     }
     .producto img {
       max-width: 100%;
-      border-radius: 10px;
+      border-radius: 12px;
     }
     .producto h3 {
+      font-size: 1.6rem;
+      color: #333;
       margin: 15px 0 10px;
-      font-size: 1.4rem;
     }
     .producto p {
-      margin: 0 0 10px;
       font-size: 1rem;
+      color: #555;
     }
     .boton-comprar {
-      background-color: #ff6600;
+      display: inline-block;
+      margin-top: 15px;
+      background: #ff6600;
       color: white;
-      padding: 12px 25px;
-      font-size: 16px;
+      padding: 12px 24px;
       border: none;
-      border-radius: 6px;
+      border-radius: 8px;
       text-decoration: none;
-      transition: background 0.3s;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.2s;
     }
     .boton-comprar:hover {
-      background-color: #cc5200;
+      background: #cc5200;
+      transform: scale(1.05);
     }
     footer {
-      background-color: #003366;
-      color: white;
-      padding: 30px;
       text-align: center;
+      background: #222;
+      color: white;
+      padding: 40px 20px;
     }
     footer a {
-      color: #a0cfff;
+      color: #88c0ff;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Ofertas Exclusivas</h1>
-    <p>Consigue productos de tecnología y recursos digitales con descuento</p>
+    <h1>🎯 Ofertas Exclusivas</h1>
+    <p>Productos tech, recursos digitales y herramientas con descuentos brutales.</p>
   </header>
 
   <nav>
@@ -110,36 +120,42 @@
   </nav>
 
   <main>
-    <h2>🤑 Productos en Oferta</h2>
 
     <div class="producto">
-      <img src="https://via.placeholder.com/400x250.png?text=Auriculares+Gaming" alt="Auriculares Gaming">
-      <h3>Auriculares Gaming RGB</h3>
-      <p>Sonido envolvente, luz LED y micrófono incluido. Ideal para gamers.</p>
+      <img src="https://via.placeholder.com/800x400.png?text=Auriculares+Gaming+RGB" alt="Auriculares RGB">
+      <h3>Auriculares Gaming RGB 🔊</h3>
+      <p>Con iluminación LED, sonido envolvente y micrófono de alta calidad.</p>
       <p><strong>Precio: 19,99€</strong></p>
-      <a href="https://www.paypal.com/paypalme/ivanurreta/19.99" target="_blank" class="boton-comprar">Comprar ahora</a>
+      <a class="boton-comprar" href="https://www.paypal.com/paypalme/ivanurreta/19.99" target="_blank">Comprar ahora</a>
     </div>
 
     <div class="producto">
-      <img src="https://via.placeholder.com/400x250.png?text=Teclado+Mecánico" alt="Teclado Mecánico">
-      <h3>Teclado Mecánico Retroiluminado</h3>
-      <p>Ideal para escribir rápido y jugar. Retroiluminación multicolor.</p>
+      <img src="https://via.placeholder.com/800x400.png?text=Teclado+Mecánico+Retroiluminado" alt="Teclado Mecánico">
+      <h3>Teclado Mecánico Retroiluminado ⌨️</h3>
+      <p>Perfecto para trabajar y jugar. Retroiluminación personalizable y tacto pro.</p>
       <p><strong>Precio: 34,95€</strong></p>
-      <a href="https://www.paypal.com/paypalme/ivanurreta/34.95" target="_blank" class="boton-comprar">Comprar ahora</a>
+      <a class="boton-comprar" href="https://www.paypal.com/paypalme/ivanurreta/34.95" target="_blank">Comprar ahora</a>
     </div>
 
     <div class="producto">
-      <img src="https://via.placeholder.com/400x250.png?text=Pack+Plantillas+Premiere" alt="Plantillas Premiere">
-      <h3>Pack de Plantillas para Adobe Premiere Pro</h3>
-      <p>Ediciones profesionales con solo arrastrar y soltar.</p>
+      <img src="https://via.placeholder.com/800x400.png?text=Plantillas+Adobe+Premiere+Pro" alt="Plantillas Premiere">
+      <h3>Plantillas para Adobe Premiere 🎬</h3>
+      <p>Pack con intros, transiciones y efectos listos para usar. ¡Edita como un pro!</p>
       <p><strong>Precio: 4,99€</strong></p>
-      <a href="https://www.paypal.com/paypalme/ivanurreta/4.99" target="_blank" class="boton-comprar">Comprar ahora</a>
+      <a class="boton-comprar" href="https://www.paypal.com/paypalme/ivanurreta/4.99" target="_blank">Comprar ahora</a>
     </div>
+
   </main>
 
   <footer>
-    <p>© 2025 TechYouthTech | Diseñado por Iván Ureta</p>
-    <p>Instagram: <a href="https://www.instagram.com/urreta.08/" target="_blank">@urreta.08</a> | Email: <a href="mailto:ivanurreta@gmail.com">ivanurreta@gmail.com</a></p>
+    <p>© 2025 TechYouthTech — Creado por Iván Ureta</p>
+    <p>
+      <a href="mailto:ivanurreta@gmail.com">ivanurreta@gmail.com</a> |
+      <a href="https://www.instagram.com/urreta.08/" target="_blank">@urreta.08</a> |
+      <a href="https://ko-fi.com/urretatxiki2602" target="_blank">💙 Donar en Ko-fi</a> |
+      <a href="https://patreon.com/ivanurreta" target="_blank">🚀 Apóyame en Patreon</a>
+    </p>
   </footer>
+
 </body>
 </html>

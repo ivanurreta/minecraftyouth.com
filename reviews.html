@@ -3,8 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Guías | TechYouthTech</title>
+  <title>Reviews | TechYouthTech</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1a1f36, #2c3242);
+      color: #e6e6e6;
+      margin: 0 20px 40px;
+    }
+    header {
+      padding: 40px 0 30px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      color: #ff6a00;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+      user-select: none;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+    }
+    nav a {
+      color: #f0f0f5cc;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 10px 20px;
+      border-radius: 30px;
+      transition: background 0.4s, color 0.4s;
+      user-select: none;
+    }
+    nav a:hover, nav a:focus {
+      background: #ff6a00;
+      color: #fff;
+      outline: none;
+      box-shadow: 0 0 10px #ff6a00aa;
+      transform: scale(1.05);
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      background: rgba(30, 35, 50, 0.9);
+      padding: 35px 40px 50px;
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(255, 106, 0, 0.4);
+      backdrop-filter: blur(6px);
+    }
+    main h2 {
+      font-size: 2.8rem;
+      margin-bottom: 25px;
+      text-align: center;
+      text-shadow: 0 0 6px #ff6a00cc;
+    }
+    article.review {
+      background: #202638;
+      padding: 25px;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 22px rgba(255, 106, 0, 0.3);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    article.review:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(255, 106, 0, 0.6);
+    }
+    article.review h3 {
+      color: #ff6a00;
+      margin-bottom: 12px;
+      font-size: 1.6rem;
+    }
+    article.review p {
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #ddd;
+    }
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #bbb;
+      font-size: 0.9rem;
+      user-select: none;
+    }
+    @media (max-width: 700px) {
+      main {
+        padding: 25px 20px 30px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -22,64 +117,23 @@
   </header>
 
   <main>
-    <h2>Guías completas para jóvenes amantes de la tecnología</h2>
-    <p>En TechYouthTech queremos ayudarte a dar tus primeros pasos en el mundo tecnológico, con guías paso a paso, fáciles de entender y actualizadas para 2025.</p>
+    <h2>Reviews exclusivas de gadgets top</h2>
 
-    <section id="montar-pc">
-      <h3>Cómo montar tu primer PC en 2025</h3>
-      <p>Montar tu propio PC puede parecer complicado, pero con esta guía detallada aprenderás a elegir componentes, ensamblarlos y configurar todo para un rendimiento óptimo.</p>
-      <ol>
-        <li><strong>Elige la placa base adecuada:</strong> Debe ser compatible con tu procesador y tener los puertos que necesitas.</li>
-        <li><strong>Selecciona el procesador (CPU):</strong> Para gaming o edición, un Ryzen 5 o Intel i5 de última generación es ideal.</li>
-        <li><strong>Memoria RAM:</strong> 16GB es lo recomendado para la mayoría de tareas.</li>
-        <li><strong>Almacenamiento:</strong> Usa un SSD NVMe para velocidad y un HDD para almacenamiento extra.</li>
-        <li><strong>Tarjeta gráfica:</strong> Fundamental para juegos o diseño. NVIDIA o AMD, según presupuesto.</li>
-        <li><strong>Fuente de alimentación:</strong> Debe ser de buena calidad y suficiente potencia (al menos 550W).</li>
-        <li><strong>Montaje:</strong> Sigue tutoriales en vídeo para evitar errores comunes.</li>
-        <li><strong>Instalación de sistema operativo:</strong> Windows 10/11 o Linux según preferencia.</li>
-      </ol>
-      <p>Consejo: Haz una lista y presupuesto antes de comprar y compara precios en tiendas online.</p>
-    </section>
+    <article class="review">
+      <h3>Smartphone TurboMax Z10 - Potencia sin límites</h3>
+      <p>El TurboMax Z10 combina un diseño futurista con una cámara increíble de 108MP, batería de larga duración y carga ultrarrápida. Ideal para gamers y creadores de contenido. ¿Vale la pena? Te contamos todo.</p>
+    </article>
 
-    <section id="crear-web">
-      <h3>Crear una web gratis en GitHub Pages</h3>
-      <p>Ideal para estudiantes y proyectos personales. Sigue estos pasos para crear tu primera página web pública y profesional.</p>
-      <ol>
-        <li><strong>Crea una cuenta en GitHub:</strong> Si no tienes una, regístrate en <a href="https://github.com" target="_blank">github.com</a>.</li>
-        <li><strong>Abre un nuevo repositorio:</strong> Ponle nombre, por ejemplo <code>mi-web</code>.</li>
-        <li><strong>Sube tus archivos HTML, CSS y JS:</strong> Puedes usar la interfaz web o Git.</li>
-        <li><strong>Activa GitHub Pages:</strong> En la configuración del repositorio, selecciona la rama main y la carpeta raíz para publicar.</li>
-        <li><strong>Visita la URL que GitHub te proporciona:</strong> Será algo como <code>https://tuusuario.github.io/mi-web/</code>.</li>
-      </ol>
-      <p>Esta es una forma profesional, rápida y gratuita para empezar a crear presencia online.</p>
-    </section>
+    <article class="review">
+      <h3>Auriculares inalámbricos Zeno X100 - Sonido premium</h3>
+      <p>Con cancelación activa de ruido, gran autonomía y un diseño ergonómico, los Zeno X100 destacan para los amantes de la música. Probamos su rendimiento en llamadas y gaming.</p>
+    </article>
 
-    <section id="editar-videos">
-      <h3>Editar vídeos en móvil fácilmente</h3>
-      <p>Para crear contenido en redes, estos apps gratuitas te ayudarán a editar vídeos desde tu smartphone sin complicaciones:</p>
-      <ul>
-        <li><strong>CapCut:</strong> Editor potente con efectos y plantillas.</li>
-        <li><strong>InShot:</strong> Fácil para cortar y añadir música.</li>
-        <li><strong>VN Video Editor:</strong> Más opciones de control y efectos.</li>
-      </ul>
-      <p>Consejo: Empieza con clips cortos y practica mucho para mejorar.</p>
-    </section>
+    <article class="review">
+      <h3>Smartwatch YouthTracker - Tu entrenador personal en la muñeca</h3>
+      <p>Seguimiento de salud avanzado, GPS integrado y pantalla AMOLED vibrante. Perfecto para jóvenes activos que buscan un aliado para su bienestar diario.</p>
+    </article>
 
-    <section>
-      <h3>Otras guías útiles</h3>
-      <ul>
-        <li><a href="#">Cómo aprender a programar desde cero</a></li>
-        <li><a href="#">Configurar tu primer servidor web</a></li>
-        <li><a href="#">Mejores apps para productividad juvenil</a></li>
-        <li><a href="#">Consejos para seguridad online</a></li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>¿Quieres que preparemos una guía especial para ti?</h2>
-      <p>Contacta con nosotros para sugerir temas o dudas que quieras que resolvamos en próximos posts.</p>
-      <p>Email: <a href="mailto:ivanurreta@gmail.com">ivanurreta@gmail.com</a></p>
-    </section>
   </main>
 
   <footer>
